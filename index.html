@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Service Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="home">
+        <h1>Freelance Service Marketplace</h1>
+            <p>
+                Discover skilled freelancers, explore their services and portfolios,
+                compare professionals, and submit your project requirements.
+                Freelancers can showcase their work and receive project requests.
+            </p>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#freelancers">Find Freelancers</a></li>
+                    <li><a href="#services">Explore services </a></li>
+                    <li><a href="#projects">Post a Project</a></li>
+                    <li><a href="#dashboards">Dashboards</a></li>
+                    <li><a href="#proposals">Submit Proposal</a></li>
+                    <li><a href="#tracking">Project Tracking</a></li>
+                </ul>            
+            </nav>
+
+    
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h2>Find the Right Freelancer for Your Project</h2>
+            <p>
+                Explore talented freelaancers, compare their services and portfolios,
+                and find the right professional for your project.
+                Freelancers can showcase skills and receive project requests.
+
+            </p>
+            <a href="#freelancers">Find Freelancers</a>
+
+            <a href="#projects">Post a Project</a>
+        </section>
+
+        <section id="freelancers">
+            <h2>Meet Our Freelancers</h2>
+            <p>
+                Browse freelancer profiles, explore thier skills and expriences,
+                and view their portfolios to find the right professional.
+            </p>
+            <div class="freelancer-search">
+
+    <h3>Search for Freelancers</h3>
+
+    <div>
+        <label for="freelancer-search">Search by Name or Skill:</label>
+        <input
+            type="search"
+            id="freelancer-search"
+            name="freelancer-search"
+            placeholder="Example: Rahul, HTML, JavaScript">
+    </div>
+
+    <div>
+        <label for="freelancer-category">Filter by Category:</label>
+
+        <select id="freelancer-category" name="freelancer-category">
+            <option value="all">All Categories</option>
+            <option value="web-development">Web Development</option>
+            <option value="graphic-design">Graphic Design</option>
+            <option value="video-editing">Video Editing</option>
+            <option value="content-writing">Content Writing</option>
+        </select>
+    </div>
+
+    <button type="button" id="search-freelancers">
+        Search Freelancers
+    </button>
+
+</div>
+            <article>
+                <h3>Rahul Sharma</h3>
+                <p>Professional Role: web Developer</p>
+                <p>Skills:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p>Experience: 2 Years</p>
+
+                <a href="#portfolio">View Portfolio</a>
+            </article>
+        </section>
+
+        <section id="services">
+            <h2>Explore Our services</h2>
+            <p>
+                Discover professional services offered by skilled freelencers.
+                Comapre services details, skills, poortfolios and prices before 
+                choosing the right service for your project.
+            </p>
+            <article>
+                <h3>Website Development</h3>
+                <p>
+                    Get a professional and respoonsive website for your business,
+                    portfolio or personal needs. The service includes website
+                    design, development and basic functionality.
+                </p>
+                <p><strong>Starting Price:</strong> ₹2,000</p>
+                <p><strong>Delivery Time:</strong> 5 Days</p>
+                <p><strong>Service Includes:</strong></p>
+                <ul>
+                    <li>Responsive website design</li>
+                    <li>HTML and CSS development</li>
+                    <li>Basic JavaScript functionality</li>
+                    <li>Mobile-friendly layout</li>
+                </ul>
+                <p><strong>Provided by:</strong> Rahul Sharma</p>
+
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>Post Your Project</h2>
+            <p>
+    Share your project requirements, describe the work you need,
+    select your budget, and receive proposals from skilled freelancers.
+</p>
+
+<div class="project-search">
+
+    <h3>Find Available Projects</h3>
+
+    <div>
+        <label for="project-search">Search Projects:</label>
+
+        <input
+            type="search"
+            id="project-search"
+            name="project-search"
+            placeholder="Search by project title or skill">
+    </div>
+
+    <div>
+        <label for="project-budget-filter">Filter by Budget:</label>
+
+        <select id="project-budget-filter" name="project-budget-filter">
+            <option value="all">All Budgets</option>
+            <option value="low">Below ₹5,000</option>
+            <option value="medium">₹5,000 – ₹15,000</option>
+            <option value="high">Above ₹15,000</option>
+        </select>
+    </div>
+
+    <button type="button" id="search-projects">
+        Search Projects
+    </button>
+    <div id="available-project-list" aria-live="polite"></div>
+    
+
+</div>
+
+<form id="project-form">
+
+    <div>
+        <label for="project-title">Project Title:</label>
+        <input type="text" id="project-title"
+               name="project-title"
+               placeholder="Enter your project title" required>
+    </div>
+
+    <div>
+        <label for="project-description">Project Description:</label>
+        <textarea id="project-description"
+                  name="project-description"
+                  rows="5"
+                  placeholder="Describe your project requirements"
+                  required></textarea>
+    </div>
+
+    <div>
+        <label for="category">Select Category:</label>
+        <select id="category" name="category" required>
+            <option value="">Choose a category</option>
+            <option value="web-development">Web Development</option>
+            <option value="graphic-design">Graphic Design</option>
+            <option value="video-editing">Video Editing</option>
+            <option value="content-writing">Content Writing</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="budget">Your Budget (₹):</label>
+        <input type="number" id="budget"
+               name="budget" min="100" required>
+    </div>
+
+    <div>
+        <label for="deadline">Project Deadline:</label>
+        <input type="date" id="deadline"
+               name="deadline" required>
+    </div>
+
+    <button type="submit">Submit Project Request</button>
+
+</form>
+
+
+
+
+        </section>
+
+        <section id="proposals">
+
+    <h2>Submit Your Proposal</h2>
+
+    <p>
+        Freelancers can submit proposals for available projects.
+        Describe your approach, proposed budget and expected
+        completion time to help clients evaluate your offer.
+    </p>
+
+    <form id="proposal-form">
+
+        <div>
+            <label for="freelancer-name">Freelancer Name:</label>
+            <input
+                type="text"
+                id="freelancer-name"
+                name="freelancer-name"
+                placeholder="Enter your name"
+                required>
+        </div>
+
+        <div>
+            <label for="proposal-project">Select Project:</label>
+
+            <select id="proposal-project"
+                    name="proposal-project"
+                    required>
+
+                <option value="">Choose a project</option>
+                <option value="business-website">Business Website</option>
+                <option value="logo-design">Logo Design</option>
+                <option value="portfolio-design">Portfolio Design</option>
+
+            </select>
+        </div>
+
+        <div>
+            <label for="proposal-budget">Your Proposed Budget (₹):</label>
+            <input
+                type="number"
+                id="proposal-budget"
+                name="proposal-budget"
+                min="100"
+                placeholder="Enter your proposed amount"
+                required>
+        </div>
+
+        <div>
+            <label for="completion-time">Expected Completion Time:</label>
+            <input
+                type="number"
+                id="completion-time"
+                name="completion-time"
+                min="1"
+                placeholder="Number of days"
+                required>
+        </div>
+
+        <div>
+            <label for="proposal-description">Proposal Description:</label>
+
+            <textarea
+                id="proposal-description"
+                name="proposal-description"
+                rows="5"
+                placeholder="Explain how you will complete this project"
+                required></textarea>
+        </div>
+
+        <button type="submit">Submit Proposal</button>
+
+    </form>
+
+</section>
+
+        <section id="portfolio">
+
+    <h2>Freelancer Portfolios</h2>
+
+    <p>
+        Explore previous projects completed by our freelancers
+        and review their skills and work quality.
+    </p>
+
+    <article>
+        <h3>Business Website Design</h3>
+
+        <p>
+            A responsive business website designed to help
+            companies showcase their services online.
+        </p>
+
+        <p><strong>Freelancer:</strong> Rahul Sharma</p>
+
+        <p><strong>Skills Used:</strong></p>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </article>
+
+    <article>
+        <h3>Personal Portfolio Website</h3>
+
+        <p>
+            A personal portfolio website displaying professional
+            information, skills and completed projects.
+        </p>
+
+        <p><strong>Freelancer:</strong> Rahul Sharma</p>
+
+        <p><strong>Skills Used:</strong></p>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Responsive Web Design</li>
+        </ul>
+    </article>
+
+</section>
+
+
+<section id="dashboards">
+
+    <h2>Marketplace Dashboards</h2>
+
+    <p>
+        Manage project activities, monitor requests,
+        review proposals and track project progress.
+    </p>
+
+    <article>
+
+        <h3>Client Dashboard</h3>
+
+        <p>
+            Clients can manage their posted projects,
+            review proposals and monitor project status.
+        </p>
+
+        <h4>My Recent Projects</h4>
+
+        <table>
+
+            <caption>Client Project Overview</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Project</th>
+                    <th scope="col">Budget</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Business Website</td>
+                    <td>₹10,000</td>
+                    <td>Open</td>
+                </tr>
+
+                <tr>
+                    <td>Logo Design</td>
+                    <td>₹2,000</td>
+                    <td>In Progress</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <div id="client-project-list"></div>
+        <h3>Proposals Received</h3>
+
+<div id="client-proposal-list"></div>
+
+    </article>
+
+    <article>
+
+        <h3>Freelancer Dashboard</h3>
+
+        <p>
+            Freelancers can review available projects,
+            manage their proposals and track assigned work.
+        </p>
+
+        <h4>My Proposals</h4>
+
+        <table>
+
+            <caption>Freelancer Proposal Overview</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Project</th>
+                    <th scope="col">Proposed Amount</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Business Website</td>
+                    <td>₹8,000</td>
+                    <td>Pending</td>
+                </tr>
+
+                <tr>
+                    <td>Portfolio Design</td>
+                    <td>₹3,000</td>
+                    <td>Accepted</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <div id="freelancer-proposal-list"></div>
+
+    </article>
+
+</section>
+
+<section id="tracking">
+
+    <h2>Project Status Tracking</h2>
+
+    <p>
+        Monitor project progress and check the current status
+        of projects submitted through the marketplace.
+    </p>
+
+    <table>
+
+        <caption>Project Progress Overview</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Project Name</th>
+                <th scope="col">Freelancer</th>
+                <th scope="col">Budget</th>
+                <th scope="col">Current Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Business Website</td>
+                <td>Rahul Sharma</td>
+                <td>₹10,000</td>
+                <td>In Progress</td>
+            </tr>
+
+            <tr>
+                <td>Logo Design</td>
+                <td>Priya Singh</td>
+                <td>₹2,000</td>
+                <td>Completed</td>
+            </tr>
+
+            <tr>
+                <td>Portfolio Design</td>
+                <td>Amit Kumar</td>
+                <td>₹5,000</td>
+                <td>Open</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</section>
+    </main>
+
+    <footer>
+
+    <h2>Freelance Service Marketplace</h2>
+
+    <p>
+        Connecting clients with skilled freelancers
+        for professional services and projects.
+    </p>
+
+    <nav aria-label="Footer Navigation">
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#freelancers">Freelancers</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Post a Project</a></li>
+            <li><a href="#portfolio">Portfolios</a></li>
+        </ul>
+
+    </nav>
+
+    <p>&copy; 2026 Freelance Service Marketplace. All rights reserved.</p>
+
+</footer>
+
+   <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,963 @@
+
+/* Global settings */
+* {
+    box-sizing: border-box;
+}
+
+/* Complete webpage */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* Website header */
+header {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Main heading */
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Header paragraph */
+header p {
+    font-size: 16px;
+    color: #dbeafe;
+}
+
+/* Navigation menu */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Navigation links */
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #93c5fd;
+}
+
+/* Main content container */
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* All main sections */
+main section {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Section headings */
+main section h2 {
+    color: #172554;
+    font-size: 25px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Welcome section */
+#welcome {
+    text-align: center;
+    background-color: #eff6ff;
+    padding: 45px 25px;
+}
+
+/* Welcome heading */
+#welcome h2 {
+    font-size: 30px;
+    border-bottom: none;
+}
+
+/* Welcome buttons */
+#welcome a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    margin: 8px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Welcome button hover effect */
+#welcome a:hover {
+    background-color: #1e40af;
+}
+
+/* Content cards */
+article {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 20px;
+    margin: 16px 0;
+    border-radius: 10px;
+}
+
+/* Form labels */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #374151;
+}
+
+/* Form input fields */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Textarea size */
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Focus effect on form fields */
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* All buttons */
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #1e40af;
+}
+
+/* Dashboard and tracking tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Table headings and cells */
+th,
+td {
+    padding: 13px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+/* Table heading background */
+th {
+    background-color: #172554;
+    color: white;
+}
+
+/* Alternate table row background */
+tbody tr:nth-child(even) {
+    background-color: #f3f6fc;
+}
+
+/* Search fields */
+main input,
+main select,
+main textarea {
+    max-width: 100%;
+}
+
+/* Freelancer and service card hover effect */
+article {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+/* Website footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #bfdbfe;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 12px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header nav ul {
+        gap: 12px;
+    }
+
+    main {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    main section {
+        padding: 18px;
+    }
+
+    main section h2 {
+        font-size: 21px;
+    }
+
+    #welcome {
+        padding: 30px 15px;
+    }
+
+    #welcome h2 {
+        font-size: 25px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 21px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #welcome a {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+/* Form feedback messages */
+
+.form-feedback {
+    color: #166534;
+    background-color: #dcfce7;
+    padding: 12px;
+    border-radius: 7px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form-feedback:empty {
+    display: none;
+}
+
+/* Form error message */
+
+.form-feedback.error {
+    color: #991b1b;
+    background-color: #fee2e2;
+}
+
+/* Saved dashboard records */
+
+.saved-record {
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 15px 0;
+}
+
+.saved-record h3 {
+    color: #172554;
+    margin-top: 0;
+}
+
+.saved-record p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.saved-record li {
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+/* Project status tracking */
+
+.project-status-control {
+    margin-top: 18px;
+    padding-top: 15px;
+    border-top: 1px solid #bfdbfe;
+}
+
+.project-status-control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #172554;
+}
+
+.project-status-control select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #93c5fd;
+    border-radius: 7px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.status-message {
+    color: #166534;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+/* Available project cards */
+
+.available-project-card {
+    background-color: #ffffff;
+    border: 1px solid #bfdbfe;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 18px 0;
+}
+
+.available-project-card h3 {
+    color: #172554;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.available-project-card p {
+    color: #4b5563;
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+.available-project-card:hover {
+    border-color: #2563eb;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Freelancer profile card design */
+
+#freelancers article {
+    border-left: 5px solid #2563eb;
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+#freelancers article h3 {
+    color: #172554;
+    font-size: 21px;
+}
+
+/* Service listing cards */
+
+#services article {
+    border-left: 5px solid #16a34a;
+    padding: 24px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+#services article h3 {
+    color: #166534;
+    font-size: 21px;
+}
+
+/* Freelancer filter feedback */
+
+#freelancer-filter-message {
+    color: #1e40af;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* Search controls */
+
+#freelancers input,
+#freelancers select {
+    margin-bottom: 10px;
+}
+
+#freelancers select:focus,
+#freelancers input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* Proposals matched with client projects */
+
+.matched-proposals {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #dbeafe;
+}
+
+.matched-proposals h4 {
+    color: #1e40af;
+    font-size: 18px;
+}
+
+.matched-proposal {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 12px 0;
+}
+
+.matched-proposal h5 {
+    color: #172554;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.matched-proposal p {
+    color: #475569;
+    margin: 7px 0;
+    overflow-wrap: anywhere;
+}
+
+/* Proposal decision controls */
+
+.proposal-decision-controls {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.proposal-decision-message {
+    font-weight: bold;
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.accept-proposal-button {
+    background-color: #15803d;
+    margin-right: 8px;
+}
+
+.accept-proposal-button:hover {
+    background-color: #166534;
+}
+
+.reject-proposal-button {
+    background-color: #dc2626;
+    margin-right: 8px;
+}
+
+.reject-proposal-button:hover {
+    background-color: #991b1b;
+}
+
+@media (max-width: 480px) {
+    .proposal-decision-controls button {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+/* Public project status */
+
+.project-listing-status {
+    font-weight: bold;
+    color: #1d4ed8;
+    background-color: #eff6ff;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+/* Project proposal count */
+
+.project-proposal-count {
+    color: #475569;
+    font-weight: bold;
+}
+
+/* Freelancer proposal decision */
+
+.freelancer-proposal-status {
+    background-color: #dcfce7;
+    color: #166534;
+    font-weight: bold;
+    padding: 9px 12px;
+    border-radius: 6px;
+}
+
+/* Related project status */
+
+.freelancer-project-status {
+    background-color: #eff6ff;
+    color: #1e40af;
+    font-weight: bold;
+    padding: 9px 12px;
+    border-radius: 6px;
+}
+
+/* Responsive dashboard records */
+
+@media (max-width: 600px) {
+
+    .saved-record {
+        padding: 14px;
+    }
+
+    .matched-proposal {
+        padding: 12px;
+    }
+
+    .project-status-control select {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =====================================
+   FINAL PROFESSIONAL WEBSITE DESIGN
+===================================== */
+
+/* Website color variables */
+
+:root {
+    --primary-color: #1d4ed8;
+    --dark-color: #172554;
+    --success-color: #15803d;
+    --danger-color: #dc2626;
+    --text-color: #1f2937;
+    --muted-color: #64748b;
+    --background-color: #f5f7fb;
+    --border-color: #e5e7eb;
+    --white-color: #ffffff;
+}
+
+/* Universal settings */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+/* Body design */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+/* Header design */
+
+header {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 32px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: clamp(24px, 4vw, 36px);
+    margin-top: 0;
+}
+
+header p {
+    color: #dbeafe;
+}
+
+/* Navigation design */
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+}
+
+header nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+header nav a:hover,
+header nav a:focus-visible {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Main content */
+
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+main section {
+    margin-bottom: 28px;
+    scroll-margin-top: 20px;
+}
+
+/* Welcome section */
+
+#welcome {
+    border-radius: 14px;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    padding: 50px 25px;
+}
+
+/* Section headings */
+
+main section h2 {
+    color: var(--dark-color);
+    font-size: clamp(21px, 3vw, 27px);
+}
+
+/* Content cards */
+
+article,
+.saved-record,
+.available-project-card,
+.matched-proposal {
+    overflow-wrap: anywhere;
+}
+
+/* Buttons */
+
+button {
+    min-height: 44px;
+    padding: 12px 22px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Form design */
+
+form {
+    margin-top: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #374151;
+}
+
+form input,
+form select,
+form textarea,
+#freelancers input,
+#freelancers select {
+    width: 100%;
+    max-width: 100%;
+    min-height: 44px;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: white;
+}
+
+form textarea {
+    min-height: 120px;
+}
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+th {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+/* Dashboard records */
+
+.saved-record {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 18px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Project cards */
+
+.available-project-card {
+    background-color: white;
+    border: 1px solid #bfdbfe;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 18px 0;
+}
+
+/* Freelancer and service cards */
+
+#freelancers article,
+#services article {
+    border-radius: 10px;
+    padding: 22px;
+    margin: 18px 0;
+    background-color: white;
+}
+
+/* Links */
+
+a {
+    transition: color 0.2s ease;
+}
+
+/* Keyboard accessibility */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+/* Skip navigation link */
+
+.skip-link {
+    position: absolute;
+    top: -60px;
+    left: 10px;
+    z-index: 1000;
+    padding: 12px 18px;
+    background-color: white;
+    color: #172554;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Footer design */
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #bfdbfe;
+    margin: 5px 10px;
+}
+
+/* =====================================
+   TABLET RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 768px) {
+
+    main {
+        width: 95%;
+        margin: 18px auto;
+    }
+
+    header {
+        padding: 22px 12px;
+    }
+
+    header nav ul {
+        gap: 8px;
+    }
+
+    main section {
+        padding: 18px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+}
+
+/* =====================================
+   MOBILE RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav li {
+        width: 100%;
+    }
+
+    header nav a {
+        display: block;
+    }
+
+    main {
+        width: 96%;
+    }
+
+    #welcome {
+        padding: 28px 15px;
+    }
+
+    #welcome a {
+        display: block;
+        margin: 12px auto;
+    }
+
+    button {
+        max-width: 100%;
+    }
+
+    .saved-record,
+    .available-project-card {
+        padding: 14px;
+    }
+
+    .proposal-decision-controls button {
+        width: 100%;
+        margin: 7px 0;
+    }
+
+    footer {
+        padding: 25px 12px;
+    }
+
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
